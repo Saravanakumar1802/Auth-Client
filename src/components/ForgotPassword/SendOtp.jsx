@@ -14,7 +14,7 @@ const SendOtp = () => {
         e.preventDefault();
         try {
             const url = "https://auth-server-saravana.vercel.app/user/loginhelp";
-            const api = await axios.post(url, data);
+             await axios.post(url, data);
             window.location = '/loginhelp/otp/:token'
         } catch (error) {
             // console.log(error);

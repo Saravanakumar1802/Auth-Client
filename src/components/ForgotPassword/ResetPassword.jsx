@@ -13,7 +13,7 @@ const ResetPassword = () => {
 
         try {
             const url = `https://auth-server-saravana.vercel.app/user/loginhelp/resetpassword`;
-            const api = await axios.post(url, data);
+            await axios.post(url, data);
             window.location = "/"
         } catch (error) {
             // console.log(error);

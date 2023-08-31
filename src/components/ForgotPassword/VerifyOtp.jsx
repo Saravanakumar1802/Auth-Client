@@ -13,7 +13,7 @@ const VerifyOtp = () => {
         e.preventDefault();
         try {
             const url = `https://auth-server-saravana.vercel.app/user/loginhelp/tokenauth/${data}`;
-            const api = await axios.post((url));
+            await axios.post((url));
             window.location = "/loginhelp/ResetPassword"
         } catch (error) {
             // console.log(error);
