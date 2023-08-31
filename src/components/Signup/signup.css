@@ -8,11 +8,6 @@
 }
 
 #username {
-    /* align-items: center !important; */
-    /* justify-content: center !important; */
-    /* margin-top: 20rem;
-    margin-bottom: 1rem;
-    margin-right: 3rem; */
     min-width: none !important;
     max-width: none !important;
     width: 600px !important;
