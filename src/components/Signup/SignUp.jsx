@@ -28,7 +28,7 @@ const SignUp = () => {
         event.preventDefault();
         try {
             const url = "https://auth-server-saravana.vercel.app/user/register";
-            const { data: res } = await axios.post(url, data);
+            await axios.post(url, data);
             navigate("/login");
             // console.log(res.message);
         } catch (error) {
