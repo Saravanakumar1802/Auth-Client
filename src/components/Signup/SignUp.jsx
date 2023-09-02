@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Signup/signUp.css"
+import "./signup.css"
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Box from '@mui/material/Box';

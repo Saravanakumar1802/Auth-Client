@@ -5,7 +5,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import TextField from '@mui/material/TextField';
-import '../ForgotPassword/ForgotPass.css'
+import './ForgotPass.css'
 
 const SendOtp = () => {
     const [data, setData] = useState({ email: "" });

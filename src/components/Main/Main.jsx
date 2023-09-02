@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Main/main.css'
+import './main.css'
 import wallpaper from '../../assets/mainPic.jpg'
 import { Link } from "react-router-dom";
 import Button  from '@mui/material/Button';
