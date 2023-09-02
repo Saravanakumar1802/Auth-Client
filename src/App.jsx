@@ -7,6 +7,7 @@ import Main from './components/Main/Main'
 import SendOtp from './components/ForgotPassword/SendOtp'
 import VerifyOtp from './components/ForgotPassword/VerifyOtp'
 import ResetPassword from './components/ForgotPassword/ResetPassword'
+import ProtectRoute from './components/ProtectRoute'
 function App() {
 
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path='/' element={<Login />} />
           <Route path='/register' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/main' element={<Main />} />
+          <Route path='/main' element={<ProtectRoute  > <Main /> </ProtectRoute>} />
           <Route path='/loginhelp' element={<SendOtp />} />
           <Route path='/loginhelp/otp/:token' element={<VerifyOtp />} />
           <Route path='/loginhelp/ResetPassword' element={<ResetPassword />} />
